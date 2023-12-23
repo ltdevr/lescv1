@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <div class="container">
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#navbar" onclick="close_menu()">Welcome</a></li>
+                    <li><a href="#about-me" onclick="close_menu()">About Me</a></li>
+                    <li><a href="#portfolio" onclick="close_menu()">Projects</a></li>
+                    <li><a href="#contact" onclick="close_menu()">Contact Me</a></li>
+                    <span class="material-symbols-outlined" onclick="close_menu()">close</span>
+                </ul>
+                    <span class="material-symbols-outlined" onclick="open_menu()">menu</span>
+            </nav>
+            <div class="code-bg">
+                <img src="style_imgs/bg-code-1.png">
+            <div class="header-text">
+                <h1>Welcome<br>To<br>My<br>Portofilo</h1>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------- ABOUT ME ---------->
+    <div id="about-me">
+        <div class="about-hash">
+            <img src="style_imgs/hashtag-2.png">
+        </div>
+        <div class="container">
+            <div class="row">
+                <h1 class="sub-title">About Me</h1>
+                    <p>Motivated IT professional with a strong foundation in cloud computing,
+                        web development, and network security. Dedicated to optimizing system
+                        performance, deploying innovate solutions, and staying current with industry
+                        trends. Seeking opportunties as a<br> <span id="am-a"></span><br> to leverage expertise and drive success.<br>
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                            <p class="tab-links" onclick="opentab('work_experience')">EXPERIENCE</p>
+                            <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                                <li><span>Web Development</span><br> HTML/CSS/SASS, JavaScript, jQuery, Angular, React, React Native</li>
+                                <li><span>App Development</span><br>Building Android/iOS apps</li>
+                                <li><span>Design and Creativity</span><br>Adobe Creative Cloud/Suite, Blender</li>
+                                <li><span>Database Management</span><br>MySQL, MongoDB, NoSQL,SQL, MariaDB</li>
+                                <li><span>Programming Languages</span><br>C#, C++, Python, SQL, Java, Apple Xcode</li>
+                                <li><span>Microsoft Technologies</span><br>Microsoft Endpoint Configuration Manager (MECM/SCCM), MS O365, MS Active
+                                    Directory</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="work_experience">
+                        <ul>
+                            <li><span>2018 - 2023</span><br>IT Support/Systems Administrator at JEFFERSON COUNTY COMMISSION</li>
+                            <li><span>2015 - 2017</span><br>Digital Print Operator 2 at RR DONNELLEY</li>
+                            <li><span>2012 - 2014</span><br>Preflight Technician/Graphic and Web Design at MSPARK</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-Current</span><br>Microsoft Azure, Virtual Training, and Webinars</li>
+                                <li><span>2019-Current</span><br>Amazon Web Services</li>
+                                <li><span>2019</span><br>CBT Nuggets</li>
+                                <li><span>2018</span><br>Skillsoft</li>
+                                <li><span>2018</span><br>FreeCodeCamp</li>
+                                <li><span>2018</span><br>CodeAcademy</li>
+                                <li><span>2018</span><br>CareerFoundry</li>
+                                <li><span>2005</span><br>Xerox Training Center</li>
+                                <li><span>2000-2002</span><br>Jefferson State Community College</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------- PROJECTS ---------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <p>Hover over each tile for additional info<small>(for small screens, click)</small></p>
+            <div class="project-list">
+                <div class="work">
+                    <video src="project_imgs/orangeU-2.mp4" type="video/mp4" muted class="vid" loop></video>
+                    <p><span>Orange You App</span></p>
+                    <div class="layer">
+                        <h3>Orange You App</h3>
+                        <p>Created in: 2023</p>
+                        <p>HTML, CSS, and Javascript</p>
+                        <p>Time: 3 hours</p>
+                        <p>Description: Social media and store app</p>
+                        <p>User adds a friend, chat, post, and make online purchases</p>
+                        <a href="#"><box-icon type='logo' name='github' class="logo"></box-icon></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <video src="project_imgs/python-password-generator-3.mp4" type="video/mp4" muted class="vid" loop></video>
+                    <p><span>Python Random Password App</span></p>
+                    <div class="layer">
+                        <h3>Python Random Password App</h3>
+                        <p>Created in: 2023</p>
+                        <p>Python with tkinter GUI</p>
+                        <p>Time: 45 minutes</p>
+                        <p>Description: A random password app</p>
+                        <p>Choose the length of password (10 to 40).</p>
+                        <p>Click checkbox to add special characters.</p>
+                        <p>Generate button will create a new password.</p>
+                        <p>Copy button cuts and copies to clipboard.</p>
+                        <a href="#"><box-icon type='logo' name='github' class="logo"></box-icon></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <video src="project_imgs/StickyNotesApp-1.mp4" type="video/mp4" muted class="vid" loop></video>
+                    <p><span>Sticky Notes App</span></p>
+                    <div class="layer">
+                        <h3>Sticky Notes App</h3>
+                        <p>Created in: 2023</p>
+                        <p>HTML, CSS, and Javascript</p>
+                        <p>Time: 40 minutes</p>
+                        <p>Description: User types reminders and tasks in a note</p>
+                        <p>User will be able to save, update, and delete each note</p>
+                        <a href="#"><box-icon type='logo' name='github' class="logo"></box-icon></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <video src="project_imgs/The_Time_Dynamic.mp4" type="video/mp4" muted class="vid" loop></video>
+                    <p><span>Time Dynamic App</span></p>
+                    <div class="layer">
+                        <h3>The Time Dynamic App</h3>
+                        <p>Created in: 2023</p>
+                        <p>HTML, CSS, and Javascript</p>
+                        <p>Time: 45 minutes</p>
+                        <p>Description: Time with a dynamic background</p>
+                        <a href="#"><box-icon type='logo' name='github' class="logo"></box-icon></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <video src="project_imgs/Python_Contact_App-1.mp4" type="video/mp4" muted class="vid" loop></video>
+                    <p><span>Python Contact App</span></p>
+                    <div class="layer">
+                        <h3>Python Contact App</h3>
+                        <p>Created in: 2023</p>
+                        <p>Python and MySQL</p>
+                        <p>Time: 45 minutes</p>
+                        <p>Description: User types contact information<br>that is saved to a database</p>
+                        <p>User will be able to save, update, and delete each contact</p>
+                        <a href="#"><box-icon type='logo' name='github' class="logo"></box-icon></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <video src="project_imgs/Four_Seasons.mp4" type="video/mp4" muted class="vid" loop></video>
+                    <p><span>Four Seasons App</span></p>
+                    <div class="layer">
+                        <h3>Four Seasons App</h3>
+                        <p>Created in: 2023</p>
+                        <p>HTML, CSS, and Javascript</p>
+                        <p>Time: 60 minutes</p>
+                        <p>Description: User types reminders and tasks in a note</p>
+                        <p>User will be able to save, update, and delete each note</p>
+                        <a href="#"><box-icon type='logo' name='github' class="logo"></box-icon></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <video src="project_imgs/Movie_Rating_App.mp4" type="video/mp4" muted class="vid" loop></video>
+                    <p><span>Movie & Rating App</span></p>
+                    <div class="layer">
+                        <h3>Movie & Rating App</h3>
+                        <p>Created in: 2023</p>
+                        <p>HTML, CSS, Javascript, API</p>
+                        <p>Time: 75 minutes</p>
+                        <p>Description: This app automatcially updates via a movie database</p>
+                        <p>The app gives ratings and a description of each movie.</p>
+                        <a href="#"><box-icon type='logo' name='github' class="logo"></box-icon></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <video src="project_imgs/ToDo_List-1.mp4" type="video/mp4" muted class="vid" loop></video>
+                    <p><span>ToDo List App</span></p>
+                    <div class="layer">
+                        <h3>ToDo List App</h3>
+                        <p>Created in: 2023</p>
+                        <p>HTML, CSS, and Javascript</p>
+                        <p>Time: 30 minutes</p>
+                        <p>Description: User types a list of reminders and things to get done.</p>
+                        <p>Each list is saved in localstorage which will pick up where the app<br>
+                        was left off. The user can delete or update each list.</p>
+                        <a href="#"><box-icon type='logo' name='github' class="logo"></box-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------- CONTACT ---------->
+    <div id="contact">
+        <div class="contact-at">
+            <img src="style_imgs/at_icon-2.png">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <h2>Interested? <span>Let's talk!</span></h2>
+                    <p>so...how do you take your coffee?</p>
+                    <p>les.alltech@outlook.com</p>
+                </div>
+                <a href="file/LT_Resume_2310.pdf" download class="btn">Download Résumé</a>
+            </div>
+            <div class="contact-add">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <footer>Created by Les © 2023</footer>
+
+    <!----------SCRIPTS---------->
+    <script>
+        var options = {
+            strings:['Frontend Developer', 
+            'Web Developer', 
+            'Software Developer', 
+            'Graphic Designer', 
+            'Systems Administrator', 
+            'IT Support Specialist'],
+            typeSpeed:100,
+            backSpeed:100,
+            backDelay:1000,
+            loop:true
+        }
+        var typed = new Typed("#am-a", options);
+    </script>
+
+    <script>
+        let clips = document.querySelectorAll('.vid');
+
+            clips.forEach(clip => {
+                clip.addEventListener("mouseover", function () {
+                    clip.play();
+                });
+
+                clip.addEventListener("mouseout", function () {
+                    clip.pause();
+                });
+            });
+    </script>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("nav-menu");
+
+        function open_menu(){
+            sidemeu.style.right = "0";
+        } 
+        function close_menu(){
+            sidemeu.style.right = "-400px";
+        } 
+
+    </script>
+
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyD-MD6pV4Y95XsFCCk5p-4hqn4ae7tC54hQfWoS38Cu8C5wqG4qtmrIk4qMTEnxJk/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Successfully Sent"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
