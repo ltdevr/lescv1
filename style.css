@@ -92,14 +92,15 @@ nav ul li a:hover::after{
     filter: blur(4px);
     z-index: -1;
     /* left: 30%; */
-    /* background-size: cover; */
+    background-size: cover;
 }
 
-<-------------------- ABOUT ME -------------------------->
 .header-text h1{
     font-size: 110px;
     text-shadow: 2px 2px #000;
 }
+
+/* -----------------ABOUT ME -------------------- */
 #about-me{
     padding: 80px 0;
     color: #fff;
