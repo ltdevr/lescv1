@@ -92,7 +92,7 @@ nav ul li a:hover::after{
     filter: blur(4px);
     z-index: -1;
     /* left: 30%; */
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 <-------------------- ABOUT ME -------------------------->
